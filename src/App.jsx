@@ -6,6 +6,11 @@ const KEY = "kalane_data";
 const makeId = () => crypto.randomUUID();
 
 const seed = {
+  books: [
+    { id: makeId(), title: "Things Fall Apart", author: "Chinua Achebe", genre: "Fiction", isbn: "9780385474542", initialQty: 5, qty: 5 },
+    { id: makeId(), title: "Long Walk to Freedom", author: "Nelson Mandela", genre: "Biography", isbn: "9780316548182", initialQty: 3, qty: 3 },
+    { id: makeId(), title: "Atomic Habits", author: "James Clear", genre: "Self-help", isbn: "9780735211292", initialQty: 4, qty: 4 }
+  ],
 
   users: [
     { id: makeId(), name: "Library Administrator", membershipId: "ADM001", role: "Admin", password: "admin123" },
